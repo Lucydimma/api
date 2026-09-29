@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Netflix</title>
+<link rel="stylesheet" href="clone/index.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="logo">TMDB</div>
+    <nav><a href="#">Movies</a><a href="#">TV Shows</a><a href="#">People</a><a href="#">Awards</a><a href="#">More</a>
+    </nav>
+  </div>
+
+  <div>
+    <input id="search" placeholder="search..." onkeyup="filterCards()">
+  </div>
+
+  <div class="banner">
+    <h1>Welcome.</h1>
+    <p>Home of movies, TV shows and people to discover. Explore now.</p>
+    <div class="banner-footer"><span>‹</span> Lanterns <span>›</span></div>
+  </div>
+
+  <div class="trending">
+    <div class="trending-head">
+      <h2>Trending</h2>
+      <div class="tabs">
+        <button class="active">Today</button>
+        <button>This Week</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="status">Loading trending...</div>
+    <div class="grid" id="grid"></div>
+  </div>
+  <script src="./clone/index.js"></script>
+
+</body>
+</html>
